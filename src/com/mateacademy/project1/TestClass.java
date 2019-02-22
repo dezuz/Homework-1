@@ -13,7 +13,7 @@ public class TestClass {
         Diamond diamond = new Diamond();
         Mathematic math = new Mathematic();
 
-        result = firstUser.footbalMatchResult(1,3,1,2);
+        result = firstUser.footbalMatchResult(2, 1, 3, 2);
 
         System.out.println("\nTask 1.1 answer is: " + result);
 
@@ -23,7 +23,7 @@ public class TestClass {
         System.out.println("\nTask 1.3: ");
         powTwo = math.powTwo(4);
         powThree = math.powThree(4);
-        pow = math.pow(4,6);
+        pow = math.pow(4, 6);
 
         System.out.println("x to the power of two = " + powTwo + "\nx to the power of three = " + powThree + "\nx to the pow of y = " + pow);
 

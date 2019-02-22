@@ -4,7 +4,7 @@ public class Mathematic {
 
     private double result = 1;
 
-    public double powTwo(double number){
+    public double powTwo(double number) {
         return number * number;
     }
 
@@ -37,7 +37,7 @@ public class Mathematic {
                 i++;
             } while (fibonacciNumber != number);
 
-            System.out.println("Число " + number + " являється " + (i+2) + "-м числом Фібоначі");
+            System.out.println("Число " + number + " являється " + (i + 2) + "-м числом Фібоначі");
         }
     }
 
@@ -64,7 +64,7 @@ public class Mathematic {
                 i++;
             } while (factorialNumber != number);
 
-            System.out.println("Число " + number + " є факторіалом числа "+ (i-1) + ".");
+            System.out.println("Число " + number + " є факторіалом числа " + (i - 1) + ".");
         }
     }
 }

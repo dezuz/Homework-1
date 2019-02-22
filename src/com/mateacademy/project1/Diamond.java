@@ -4,7 +4,7 @@ public class Diamond {
 
     public void drawindDiamond(int maxLineNumber) {
 
-        if(maxLineNumber == 0)
+        if (maxLineNumber == 0)
             System.out.println("There is no diamond with line length 0 :)");
 
         int starsNumber = maxLineNumber;
@@ -20,7 +20,7 @@ public class Diamond {
                 System.out.print("* ");
             }
 
-            starsNumber = numberOfStars(i,maxLineNumber,starsNumber);
+            starsNumber = numberOfStars(i, maxLineNumber, starsNumber);
 
             numberOfSpaces = spaceNumbers(i, maxLineNumber, numberOfSpaces);
 
