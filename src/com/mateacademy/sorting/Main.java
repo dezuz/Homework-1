@@ -6,38 +6,38 @@ public class Main {
         Sorting sorting = new Sorting();
 
         sorting.initArray();
-        System.out.println("Вихідний масив.");
+        System.out.println("Output massive.");
         sorting.printArray();
         sorting.bubbleSort();
-        System.out.println("Сортуємо методом бульбашок.");
+        System.out.println("Use bubble sorting.");
         sorting.printArray();
 
         sorting.initArray();
-        System.out.println("Вихідний масив.");
+        System.out.println("Output massive.");
         sorting.printArray();
         sorting.selectionSort();
-        System.out.println("Сортуємо методом сортування вибором.");
+        System.out.println("Use selection sorting.");
         sorting.printArray();
 
         sorting.initArray();
-        System.out.println("Вихідний масив.");
+        System.out.println("Output massive.");
         sorting.printArray();
         sorting.quickSort(0,9);
-        System.out.println("Сортуємо методом швидкого сортування.");
+        System.out.println("Use quick sorting.");
         sorting.printArray();
 
         sorting.initArray();
-        System.out.println("Вихідний масив.");
+        System.out.println("Output massive.");
         sorting.printArray();
         sorting.insertionSort();
-        System.out.println("Сортуємо методом сортування вставками.");
+        System.out.println("Use insertion sort.");
         sorting.printArray();
 
         sorting.initArray();
-        System.out.println("Вихідний масив.");
+        System.out.println("Output massive.");
         sorting.printArray();
         sorting.shuttleSort();
-        System.out.println("Сортуємо методом сортування човником.");
+        System.out.println("Use shuttle sorting.");
         sorting.printArray();
     }
 }
