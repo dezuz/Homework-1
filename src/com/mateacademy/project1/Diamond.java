@@ -2,7 +2,7 @@ package com.mateacademy.project1;
 
 public class Diamond {
 
-    public void drawindDiamond(int maxLineNumber) {
+    public void drawingDiamond(int maxLineNumber) {
 
         if (maxLineNumber == 0) {
             System.out.println("There is no diamond with line length 0 :)");
@@ -12,29 +12,22 @@ public class Diamond {
 
         for (int i = 1; i < maxLineNumber + maxLineNumber;i++) {
             if (i <= maxLineNumber) {
-                drawSpaces(starsNumber + 1 - i);
-                drawStars(i);
-                System.out.println("");
+                drawSymbol(starsNumber + 1 - i, " ");
+                drawSymbol(i, "* ");
             }
             else {
                 starsNumber--;
-                drawSpaces(maxLineNumber - starsNumber + 1);
-                drawStars(starsNumber);
-                System.out.println("");
+                drawSymbol(maxLineNumber - starsNumber + 1, " ");
+                drawSymbol(starsNumber, "* ");
             }
+            System.out.println("");
         }
 
     }
 
-    private void drawStars(int number) {
+    private void drawSymbol(int number, String symbol) {
         for (int i = 0; i < number; i++) {
-            System.out.print("* ");
-        }
-    }
-
-    private void drawSpaces(int number) {
-        for (int i = 0; i < number; i++) {
-            System.out.print(" ");
+            System.out.print(symbol);
         }
     }
 }

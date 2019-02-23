@@ -2,30 +2,32 @@ package com.mateacademy.project1;
 
 public class Mathematics {
 
-    public double result = 1;
-
-    public double powTwo(int number) {
+    public int powTwo(int number) {
         return number * number;
     }
 
-    public double powThree(int number) {
+    public int powThree(int number) {
         return number * number * number;
     }
 
+    //return type is double because 5^(-2) != int, for example
     public double pow(int number, int power) {
+        double result = 1;
+
         if (power >= 0) {
             result = countingPow(number, power);
         }
         else {
             power = Math.abs(power);
-            countingPow(number, power);
-            result = 1 / result;
+            result = (double)1 / countingPow(number, power);
         }
 
         return result;
     }
 
     private double countingPow(int number, int power) {
+        double result = 1;
+
         for (int i = 0; i < power; i++) {
             result *= number;
         }
@@ -47,11 +49,11 @@ public class Mathematics {
 
     public int numberToFactorial(int number) {
         if (number <= 0) {
-           return 0;
+            return 1;
         }
         else {
             if (number == 1)
-               return 1;
+                return 1;
         }
 
         return number * (numberToFactorial(number - 1));
