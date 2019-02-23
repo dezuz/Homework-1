@@ -36,26 +36,10 @@ public class Mathematics {
     }
 
     public int fibonacciNumbers(int number) {
-        if (number == 0){
-            return 0;
-        }
-        if (number == 1){
-            return 1;
-        }
-        else{
-            return fibonacciNumbers(number - 1) + fibonacciNumbers(number - 2);
-        }
+        return (number == 0) ? 0 : (number == 1) ? 1 : fibonacciNumbers(number - 1) + fibonacciNumbers(number - 2);
     }
 
     public int numberToFactorial(int number) {
-        if (number <= 0) {
-            return 1;
-        }
-        else {
-            if (number == 1)
-                return 1;
-        }
-
-        return number * (numberToFactorial(number - 1));
+       return (number <= 0) ? 1 : (number == 1) ? 1 : number * (numberToFactorial(number - 1));
     }
 }
